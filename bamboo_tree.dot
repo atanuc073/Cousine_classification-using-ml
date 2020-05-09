@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="node #0\ncumin <= 0.5\nsamples = 2448\nvalue = [442, 598, 320, 799, 289]\nclass = korean", fillcolor="#eae9fc"] ;
+1 [label="node #1\nroasted_sesame_seed <= 0.5\nsamples = 1986\nvalue = [438, 237, 314, 796, 201]\nclass = korean", fillcolor="#d2d1f9"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="node #2\nstarch <= 0.5\nsamples = 1738\nvalue = [433, 237, 309, 560, 199]\nclass = korean", fillcolor="#ececfc"] ;
+1 -> 2 ;
+3 [label="node #3\nsamples = 1507\nvalue = [273, 235, 293, 519, 187]\nclass = korean", fillcolor="#dbdafa"] ;
+2 -> 3 ;
+4 [label="node #4\nsamples = 231\nvalue = [160, 2, 16, 41, 12]\nclass = chinese", fillcolor="#efb083"] ;
+2 -> 4 ;
+5 [label="node #5\ncilantro <= 0.5\nsamples = 248\nvalue = [5, 0, 5, 236, 2]\nclass = korean", fillcolor="#4643e6"] ;
+1 -> 5 ;
+6 [label="node #6\nsamples = 246\nvalue = [4, 0, 5, 236, 1]\nclass = korean", fillcolor="#4441e6"] ;
+5 -> 6 ;
+7 [label="node #7\nsamples = 2\nvalue = [1, 0, 0, 0, 1]\nclass = chinese", fillcolor="#ffffff"] ;
+5 -> 7 ;
+8 [label="node #8\nfish <= 0.5\nsamples = 462\nvalue = [4, 361, 6, 3, 88]\nclass = indian", fillcolor="#9fec6e"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="node #9\nsoy_sauce <= 0.5\nsamples = 405\nvalue = [4, 353, 3, 1, 44]\nclass = indian", fillcolor="#8ee956"] ;
+8 -> 9 ;
+10 [label="node #10\nsamples = 375\nvalue = [1, 346, 2, 1, 25]\nclass = indian", fillcolor="#86e749"] ;
+9 -> 10 ;
+11 [label="node #11\nsamples = 30\nvalue = [3, 7, 1, 0, 19]\nclass = thai", fillcolor="#f198de"] ;
+9 -> 11 ;
+12 [label="node #12\nyogurt <= 0.5\nsamples = 57\nvalue = [0, 8, 3, 2, 44]\nclass = thai", fillcolor="#ec6ed1"] ;
+8 -> 12 ;
+13 [label="node #13\nsamples = 52\nvalue = [0, 3, 3, 2, 44]\nclass = thai", fillcolor="#e959ca"] ;
+12 -> 13 ;
+14 [label="node #14\nsamples = 5\nvalue = [0, 5, 0, 0, 0]\nclass = indian", fillcolor="#7be539"] ;
+12 -> 14 ;
+}
